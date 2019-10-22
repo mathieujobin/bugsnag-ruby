@@ -7,6 +7,7 @@ services:
       target: ruby-maze-runner
     environment:
       NETWORK_NAME: "${BUILDKITE_JOB_ID:-ruby-maze-runner}-${RUBY_VERSION:-local}"
+      RAILS_VERSION:
       VERBOSE:
       DEBUG:
     networks:
@@ -27,10 +28,6 @@ services:
     environment:
       VERBOSE:
       DEBUG:
-    networks:
-      default:
-        aliases:
-          - maze-runner
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
