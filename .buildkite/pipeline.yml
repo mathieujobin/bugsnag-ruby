@@ -26,6 +26,7 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.6"
+      VERBOSE: true
     command: features/plain_features/ --tags "not @wip"
 
   - label: ':ruby: :rails: Rails 6 Ruby 2.6 tests'
@@ -36,6 +37,7 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.6"
       RAILS_VERSION: "6"
+      VERBOSE: true
     command: features/rails_features/ --tags "@rails6 and not @wip"
 
   - block: "Trigger full test suite"
@@ -47,6 +49,7 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "1.9.3"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.0 plain tests'
@@ -56,6 +59,7 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.0"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.1 plain tests'
@@ -65,6 +69,7 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.1"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.2 plain tests'
@@ -74,9 +79,8 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.2"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
-
-  - wait
 
   - label: ':ruby: Ruby 2.3 plain tests'
     plugins:
@@ -85,6 +89,7 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.3"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.4 plain tests'
@@ -94,6 +99,7 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.4"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.5 plain tests'
@@ -103,4 +109,5 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.5"
+      VERBOSE: true
     command: features/plain_features --tags "not @wip"
