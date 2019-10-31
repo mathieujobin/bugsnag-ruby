@@ -88,7 +88,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.6"
-      VERBOSE: true
     command: features/plain_features/ --tags "not @wip"
 
   - label: ':rails: Rails 6 Ruby 2.6 tests'
@@ -99,7 +98,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.6"
       RAILS_VERSION: "6"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails6 and not @wip"
 
   - block: "Trigger full test suite"
@@ -111,7 +109,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "1.9.3"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.0 plain tests'
@@ -121,7 +118,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.0"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.1 plain tests'
@@ -131,7 +127,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.1"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.2 plain tests'
@@ -141,7 +136,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.2"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.3 plain tests'
@@ -151,7 +145,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.3"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.4 plain tests'
@@ -161,7 +154,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.4"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':ruby: Ruby 2.5 plain tests'
@@ -171,7 +163,6 @@ steps:
         use-aliases: true
     env:
       RUBY_TEST_VERSION: "2.5"
-      VERBOSE: true
     command: features/plain_features --tags "not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.0 tests'
@@ -182,7 +173,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.0"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.1 tests'
@@ -193,7 +183,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.1"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.2 tests'
@@ -204,7 +193,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.2"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.3 tests'
@@ -215,7 +203,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.3"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.4 tests'
@@ -226,7 +213,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.4"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.4 tests'
@@ -237,7 +223,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.4"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 3 Ruby 2.5 tests'
@@ -248,7 +233,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.5"
       RAILS_VERSION: "3"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails3 and not @wip"
 
   - label: ':rails: Rails 4 Ruby 2.2 tests'
@@ -259,7 +243,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.2"
       RAILS_VERSION: "4"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails4 and not @wip"
 
   - label: ':rails: Rails 4 Ruby 2.3 tests'
@@ -270,7 +253,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.3"
       RAILS_VERSION: "4"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails4 and not @wip"
 
   - label: ':rails: Rails 5 Ruby 2.2 tests'
@@ -281,7 +263,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.2"
       RAILS_VERSION: "5"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails5 and not @wip"
 
   - label: ':rails: Rails 5 Ruby 2.3 tests'
@@ -292,7 +273,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.3"
       RAILS_VERSION: "5"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails5 and not @wip"
 
   - label: ':rails: Rails 5 Ruby 2.4 tests'
@@ -303,7 +283,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.4"
       RAILS_VERSION: "5"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails5 and not @wip"
 
   - label: ':rails: Rails 5 Ruby 2.5 tests'
@@ -314,7 +293,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.5"
       RAILS_VERSION: "5"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails5 and not @wip"
 
   - label: ':rails: Rails 5 Ruby 2.6 tests'
@@ -325,7 +303,6 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.6"
       RAILS_VERSION: "5"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails5 and not @wip"
 
   - label: ':rails: Rails 6 Ruby 2.5 tests'
@@ -336,5 +313,4 @@ steps:
     env:
       RUBY_TEST_VERSION: "2.5"
       RAILS_VERSION: "6"
-      VERBOSE: true
     command: features/rails_features/ --tags "@rails6 and not @wip"
